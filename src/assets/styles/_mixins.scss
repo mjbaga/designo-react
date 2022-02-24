@@ -1,0 +1,7 @@
+@function color($color-name) {
+  @return var(--clr-#{$color-name});
+}
+
+@function calc-rem($target, $context: 16px) {
+  @return calc($target / $context * 1rem);
+}

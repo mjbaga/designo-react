@@ -1,7 +1,21 @@
+@use 'assets/styles/index' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
-
+:root {
+  /* primary colors */
+  --clr-primary: #{$primary};
+  --clr-dark: #{$dark};
+  --clr-white: #{$light};
+  
+  /* secondary colors */
+  --clr-secondary: #{$secondary};
+  --clr-dark-gray: #{$dark-gray};
+  --clr-light-gray: #{$light-gray};
+}
 
 /* ------------------- */
 /* Reset               */
