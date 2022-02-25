@@ -1,19 +1,17 @@
-
+import Button from 'components/shared/Button';
 import styles from './DesignSystem.module.scss';
 
 const DesignSystem = () => {
 
   return (
     <div className={`${styles["design-system"]}`}>
-      <header>
+      <header className="bg-pattern-cta">
         <div className="container grid">
           <img src={require('assets/images/shared/desktop/logo-white.png')} alt="Designo Logo" />
-          <p className="uppercase font-light">Web Design System</p>
+          <h1 className="uppercase font-light fs-16">Web Design System</h1>
         </div>
       </header>
       <div className="container flow">
-        
-        <h1>Design System</h1>
         <section className="flow">
           <h2 className="section-heading">Colors</h2>
           <p className="title">Primary Colors</p>
@@ -112,8 +110,20 @@ const DesignSystem = () => {
           </div>
           
         </section>
-        <section className="flow">
+        <section className={`${styles['buttons']} flow`}>
           <h2 className="section-heading">Buttons</h2>
+          <div className="flex">
+            <div className="bg-pattern-base center grid flow">
+              <p className="font-light uppercase semi-bold">Button on dark</p>
+              <Button link="#" classes="btn-light">Learn more</Button>
+              <Button link="#" classes="btn-light active">Learn more</Button>
+            </div>
+            <div className="bg-light-gray center grid flow">
+              <p className="uppercase semi-bold">Button on light</p>
+              <Button link="#">Learn more</Button>
+              <Button link="#" classes="active">Learn more</Button>
+            </div>
+          </div>
         </section>
       </div>
     </div>

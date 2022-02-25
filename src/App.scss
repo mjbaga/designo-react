@@ -198,14 +198,6 @@ select {
 .bold { font-weight: bold; }
 .semi-bold { font-weight: 500; }
 
-// Background Colors
-.bg-primary { background: color(primary); }
-.bg-dark { background: color(dark); }
-.bg-light { background: color(light); }
-.bg-secondary { background: color(secondary); }
-.bg-dark-gray { background: color(dark-gray); }
-.bg-light-gray { background: color(light-gray); }
-
 .font-primary { color: color(primary); }
 .font-dark { color: color(dark); }
 .font-light { color: color(light); }
@@ -213,6 +205,7 @@ select {
 .font-dark-gray { color: color(dark-gray); }
 .font-light-gray { color: color(light-gray); }
 
+.fs-16 { font-size: calc(16px); }
 .fs-24 { font-size: calc(24px); }
 .fs-20 { font-size: calc(20px); }
 
@@ -223,3 +216,28 @@ select {
   line-height: calc-rem(23px);
   font-weight: bold;
 }
+
+/* Background Colors */
+.bg-primary { background: color(primary); }
+.bg-dark { background: color(dark); }
+.bg-light { background: color(light); }
+.bg-secondary { background: color(secondary); }
+.bg-dark-gray { background: color(dark-gray); }
+.bg-light-gray { background: color(light-gray); }
+
+/* Background Patterns */
+.bg-pattern-base {
+  background-image: url("/assets/images/shared/desktop/bg-pattern-small-circle.svg");
+  background-color: color(primary);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.bg-pattern-cta {
+  background-image: url("/assets/images/shared/desktop/bg-pattern-call-to-action.svg");
+  background-color: color(primary);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 80% auto;
+}
+

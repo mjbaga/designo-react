@@ -1,0 +1,27 @@
+@use 'assets/styles/index' as *;
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: color(primary);
+  display: inline-block;
+  color: color(light);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 250ms ease-in;
+
+  &-light {
+    background: color(light);
+    color: color(dark);
+
+    &:hover, &:focus, &.active {
+      background: color(light, 0.5);
+      color: color(light);
+    }
+  }
+
+  &:hover, &:focus, &.active {
+    background: color(primary, 0.5);
+  }
+}
