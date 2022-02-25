@@ -1,0 +1,71 @@
+@use 'assets/styles/index' as *;
+
+.design-system {
+  padding: 0;
+
+  header {
+    background-image: url("/assets/images/shared/desktop/bg-pattern-call-to-action.svg");
+    background-color: color(primary);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 80% auto;
+    margin-bottom: 3rem;
+    height: 200px;
+    border-bottom-right-radius: 150px;
+
+    > * {
+      // padding-block: 5rem;
+      grid-template-columns: 1fr 1fr;
+      align-content: center;
+      height: 100%;
+    }
+
+    img {
+      max-width: 200px;
+    }
+
+    p {
+      letter-spacing: 5px;
+      justify-self: end;
+    }
+  }
+
+  :global(.container) {
+    --flow-space: 5rem;
+  }
+
+  section > * {
+    --flow-space: 2rem;
+  }
+}
+
+.color-groups {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+
+  .color-item {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .color-area {
+    min-width: 75px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    border-bottom-right-radius: 80%;
+  }
+
+  .color-desc {
+    color: color(dark-gray, 0.75);
+  }
+}
+
+.typography {
+
+  > :global(.grid) {
+    grid-template-columns: 1fr 1fr;
+    --gap: 4rem;
+  }
+}
