@@ -1,0 +1,14 @@
+@use 'assets/styles' as *;
+
+.pattern-box {
+  display: grid;
+  border-radius: 10px;
+  background-color: color(primary);
+  text-align: center;
+  justify-items: center;
+  align-items: start;
+
+  h1, .section-heading {
+    color: color(light);
+  }
+}
