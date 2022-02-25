@@ -19,7 +19,7 @@ const Button = ({ link, classes, children }) => {
       wrapperTrue={children => 
         <Link 
           to={link} 
-          className={`${styles['btn']} ${splitClass.length ? classString.join() : ''}`}
+          className={`${styles['btn']} ${splitClass.length ? classString.join(' ') : ''}`}
         >
           {children}
         </Link>}
