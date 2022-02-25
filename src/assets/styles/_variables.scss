@@ -1,0 +1,22 @@
+// Colors
+$primary: 11 73% 66%;
+$dark: 270 3% 11%;
+$light: 0 0% 100%;
+
+$secondary: 11 100% 80%;
+$dark-gray: 264 5% 20%;
+$light-gray: 210 17% 95%;
+
+$sizes: (
+  gutter: 30px,
+  spacer: 15px,
+  container: (sm: 750px, md: 970px, lg: 1170px),
+  viewport:  (sm: 768px, md: 992px, lg: 1200px)
+);
+
+$breakpoints: (
+  mobile: 576px,
+  tablet: 768px,
+  sm-desktop: 992px,
+  lg-desktop: 1200px
+);
