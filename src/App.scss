@@ -1,6 +1,6 @@
 @use 'assets/styles/index' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* ------------------- */
 /* Custom properties   */
@@ -9,7 +9,7 @@
   /* primary colors */
   --clr-primary: #{$primary};
   --clr-dark: #{$dark};
-  --clr-white: #{$light};
+  --clr-light: #{$light};
   
   /* secondary colors */
   --clr-secondary: #{$secondary};
@@ -34,12 +34,44 @@ h1,
 h2,
 h3,
 h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+p {
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+// Add heading-1 class for elements that are not h1 (to avoid h1 duplicates)
+h1 {
+  font-size: calc-rem(48px);
+  line-height: calc-rem(48px);
+}
+
+h2 {
+  font-size: calc-rem(40px);
+  line-height: calc-rem(48px);
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: calc-rem(20px);
+  line-height: calc-rem(26px);
+  letter-spacing: 5px;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: color(primary);
+  font-weight: bold;
+}
+
+.section-heading {
+  font-size: calc-rem(48px);
+  line-height: calc-rem(48px);
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -57,7 +89,10 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: calc-rem(26px);
+  font-size: calc-rem(16px);
+  font-family: 'Jost', sans-serif;
+  color: color(dark);
 }
 
 /* A elements that don't have a class get default styles */
@@ -96,6 +131,7 @@ select {
   }
 }
 
+
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */
@@ -116,4 +152,74 @@ select {
 
 .flow--space-small {
   --flow-space: 0.5rem;
+}
+
+.container {
+  position: relative;
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 20px;
+  width: 100%;
+
+  @include respond-to(lg-desktop) {
+    max-width: 1360px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 9999;
+  background: hsl( var(--clr-white) );
+  color: hsl( var(--clr-dark) );
+  padding: .5em 1em;
+  margin-inline: auto;
+  transition: transform 500ms ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
+.center { text-align: center; }
+.uppercase { text-transform: uppercase; }
+.bold { font-weight: bold; }
+.semi-bold { font-weight: 500; }
+
+// Background Colors
+.bg-primary { background: color(primary); }
+.bg-dark { background: color(dark); }
+.bg-light { background: color(light); }
+.bg-secondary { background: color(secondary); }
+.bg-dark-gray { background: color(dark-gray); }
+.bg-light-gray { background: color(light-gray); }
+
+.font-primary { color: color(primary); }
+.font-dark { color: color(dark); }
+.font-light { color: color(light); }
+.font-secondary { color: color(secondary); }
+.font-dark-gray { color: color(dark-gray); }
+.font-light-gray { color: color(light-gray); }
+
+.fs-24 { font-size: calc(24px); }
+.fs-20 { font-size: calc(20px); }
+
+.small-label {
+  color: color(dark-gray, 0.75);
+  text-transform: uppercase;
+  font-size: calc-rem(13px);
+  line-height: calc-rem(23px);
+  font-weight: bold;
 }

@@ -1,7 +1,35 @@
-@function color($color-name) {
-  @return var(--clr-#{$color-name});
+@use 'assets/styles/variables' as *;
+
+@function color($color-name, $opacity: 1) {
+  @if $opacity < 1 {
+    @return hsl(var(--clr-#{$color-name}) / $opacity);
+  } @else {
+    @return hsl(var(--clr-#{$color-name}));
+  }
 }
 
 @function calc-rem($target, $context: 16px) {
   @return calc($target / $context * 1rem);
+}
+
+@mixin respond-to($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin normalise-list() {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
