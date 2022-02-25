@@ -1,11 +1,16 @@
+import Page from 'components/layout/Page';
 import styles from './Homepage.module.scss';
 
 const Homepage = () => {
 
   return (
-    <div className={styles.homepage}>
+    <Page>
       <h1>Homepage</h1>
-    </div>
+      <div className="container">
+
+      </div>
+    </Page>
+
     
   )
 }
