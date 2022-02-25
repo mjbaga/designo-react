@@ -1,0 +1,99 @@
+@use 'assets/styles' as *;
+
+.hero-box {
+  gap: 1.5rem;
+  max-height: 90vh;
+  overflow-y: hidden;
+  padding: 4rem 1rem;
+  border-radius: 0;
+  grid-template-areas: 
+    'heading'
+    'desc'
+    'button'
+    'image';
+  align-items: start;
+
+  h1, .section-heading {
+    grid-area: heading;
+    max-width: 25ch;
+  }
+
+  .desc {
+    grid-area: desc;
+    max-width: 60ch;
+    
+    & * {
+      color: color(light);
+    }
+  }
+
+  a {
+    grid-area: button;
+    z-index: 1000;
+  }
+
+  .image-container {
+    grid-area: image;
+    margin-top: 2rem;
+    z-index: 100;
+    position: relative;
+    width: min(60%, 280px);
+    border-radius: 0;
+
+    &::after {
+      content: ' ';
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      box-shadow: $boxshadow-darkgrey;
+      z-index: 1;
+      border-radius: 10%;
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .hero-box {
+    border-radius: 10px;
+  }
+}
+
+@include respond-to(tablet) {
+  .hero-box {
+    max-height: 90vh;
+    padding: 4rem 3rem;
+  }
+}
+
+@include respond-to(sm-desktop) {
+  .hero-box {
+    padding: 5rem 4rem;
+    max-height: none;
+    text-align: left;
+    justify-items: start;
+    align-items: center;
+    column-gap: 5rem;
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-areas: 
+      'heading image'
+      'desc image'
+      'button image';
+
+      .image-container {
+        width: 300px;
+        justify-self: center;
+        margin-bottom: -200px;
+      }
+
+      h1, .section-heading {
+        align-self: end;
+      }
+    
+      a {
+        align-self: start;
+      }
+
+  }
+}
