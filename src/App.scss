@@ -28,6 +28,28 @@
   box-sizing: border-box;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: calc-rem(26px);
+  font-size: calc-rem(15px);
+  font-family: 'Jost', sans-serif;
+  color: color(dark);
+}
+
+
 /* Remove default margin */
 body,
 h1,
@@ -44,13 +66,13 @@ h1, h2, h3, h4, h5, h6 {
 
 // Add heading-1 class for elements that are not h1 (to avoid h1 duplicates)
 h1 {
-  font-size: calc-rem(48px);
-  line-height: calc-rem(48px);
+  font-size: calc-rem(32px);
+  line-height: calc-rem(32px);
 }
 
 h2 {
-  font-size: calc-rem(40px);
-  line-height: calc-rem(48px);
+  font-size: calc-rem(28px);
+  line-height: calc-rem(32px);
   letter-spacing: 2px;
 }
 
@@ -68,31 +90,33 @@ h3 {
 }
 
 .section-heading {
-  font-size: calc-rem(48px);
-  line-height: calc-rem(48px);
+  font-size: calc-rem(32px);
+  line-height: calc-rem(32px);
   font-weight: 500;
   text-transform: uppercase;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
+@include respond-to(tablet) {
+  body {
+    font-size: calc-rem(16px);
+  }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: calc-rem(26px);
-  font-size: calc-rem(16px);
-  font-family: 'Jost', sans-serif;
-  color: color(dark);
+  h1 {
+    font-size: calc-rem(48px);
+    line-height: calc-rem(48px);
+  }
+  
+  h2 {
+    font-size: calc-rem(40px);
+    line-height: calc-rem(48px);
+  }
+  
+  .section-heading {
+    font-size: calc-rem(48px);
+    line-height: calc-rem(48px);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }
 
 /* A elements that don't have a class get default styles */
@@ -166,6 +190,12 @@ select {
   }
 }
 
+@include respond-to-max(mobile) {
+  .mobile-no-pad {
+    padding-inline: 0;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -226,9 +256,13 @@ select {
 .bg-light-gray { background: color(light-gray); }
 
 /* Background Patterns */
+.bg-pattern {
+  background-color: color(primary);
+  background-repeat: no-repeat;
+}
+
 .bg-pattern-base {
   background-image: url("/assets/images/shared/desktop/bg-pattern-small-circle.svg");
-  background-color: color(primary);
   background-repeat: no-repeat;
   background-position: calc(100% + 100px) -100px;
   background-size: 350px 350px;
@@ -236,9 +270,20 @@ select {
 
 .bg-pattern-cta {
   background-image: url("/assets/images/shared/desktop/bg-pattern-call-to-action.svg");
-  background-color: color(primary);
-  background-repeat: no-repeat;
   background-position: center right;
   background-size: 80% auto;
 }
 
+.bg-pattern-big-circle {
+  background-image: url("/assets/images/home/desktop/bg-pattern-hero-home.svg");
+  background-position: center left;
+  background-size: auto;
+
+  @include respond-to(mobile) {
+    background-position: 150% center;
+  }
+
+  @include respond-to(sm-desktop) {
+    background-position: top right;
+  }
+}
