@@ -113,12 +113,12 @@ const DesignSystem = () => {
         <section className={`${styles['buttons']} flow`}>
           <h2 className="section-heading">Buttons</h2>
           <div className="flex">
-            <div className="bg-pattern-base center grid flow">
+            <div className="bg-pattern bg-pattern-base center grid flow">
               <p className="font-light uppercase semi-bold">Button on dark</p>
               <Button link="#" classes="btn-light">Learn more</Button>
               <Button link="#" classes="btn-light active">Learn more</Button>
             </div>
-            <div className="bg-light-gray center grid flow">
+            <div className="bg-pattern bg-light-gray center grid flow">
               <p className="uppercase semi-bold">Button on light</p>
               <Button link="#">Learn more</Button>
               <Button link="#" classes="active">Learn more</Button>
