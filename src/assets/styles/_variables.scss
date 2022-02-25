@@ -7,6 +7,10 @@ $secondary: 11 100% 80%;
 $dark-gray: 264 5% 20%;
 $light-gray: 210 17% 95%;
 
+/* Shadow */
+$boxshadow-grey: 0 0 15px 2px rgba(0,0,0,0.1);
+$boxshadow-darkgrey: 0 0 30px 10px rgba(0,0,0,0.40);
+
 $sizes: (
   gutter: 30px,
   spacer: 15px,
