@@ -2,7 +2,10 @@
 
 .design-system {
   padding: 0;
-  margin-bottom: 3rem;
+
+  > :global(.container) {
+    margin-bottom: 5rem;
+  }
 
   header {
     margin-bottom: 3rem;
@@ -77,4 +80,9 @@
     --gap: 0.5rem;
     --flow-space: 1rem;
   }
+}
+
+footer {
+  min-height: 30vh;
+  background: color(dark);
 }

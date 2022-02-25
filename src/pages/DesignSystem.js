@@ -1,4 +1,4 @@
-import Button from 'components/shared/Button';
+import Button from 'components/common/Button';
 import styles from './DesignSystem.module.scss';
 
 const DesignSystem = () => {
@@ -125,7 +125,9 @@ const DesignSystem = () => {
             </div>
           </div>
         </section>
+
       </div>
+      <footer></footer>
     </div>
   )
 }

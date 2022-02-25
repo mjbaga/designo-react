@@ -230,7 +230,8 @@ select {
   background-image: url("/assets/images/shared/desktop/bg-pattern-small-circle.svg");
   background-color: color(primary);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: calc(100% + 100px) -100px;
+  background-size: 350px 350px;
 }
 
 .bg-pattern-cta {
