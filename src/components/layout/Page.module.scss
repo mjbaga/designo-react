@@ -1,3 +1,13 @@
+@use 'assets/styles' as *;
+
 .page {
   padding: 0;
+  --flow-space: 4rem;
+}
+
+@include respond-to(sm-desktop) {
+  .page {
+    padding: 0;
+    --flow-space: 5rem;
+  }
 }

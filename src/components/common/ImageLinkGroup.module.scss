@@ -1,0 +1,17 @@
+@use 'assets/styles' as *;
+
+.image-link-group {
+  display: grid;
+  gap: 1rem;
+}
+
+@include respond-to(sm-desktop) {
+  .image-link-group {
+    grid-template-columns: 1fr 1fr;
+
+    *:first-child {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+  }
+}
