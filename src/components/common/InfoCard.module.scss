@@ -56,5 +56,6 @@
 @include respond-to(sm-desktop) {
   .info-card {
     grid-template-columns: none;
+    text-align: center;
   }
 }
