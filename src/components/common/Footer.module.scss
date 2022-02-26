@@ -1,0 +1,148 @@
+@use 'assets/styles' as *;
+
+.footer {
+  background: color(dark);
+  padding-block: 8rem 4rem;
+  
+  &-grid {
+    display: grid;
+    --flow-space: 2rem;
+    grid-template-areas:
+      'footerTop'
+      'address'
+      'socialNav';
+  }
+
+  &-top {
+    grid-area: footerTop;
+    display: flex;
+    flex-direction: column;
+  }
+
+  :global(.logo) {
+    margin-inline: auto;
+  }
+
+  &-nav {
+    grid-area: footerNav;
+    border-top: 1px solid color(light, 0.5);
+    margin-top: 0;
+    padding-top: 2rem;
+
+    ul {
+      @include normalise-list();
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      li {
+        text-align: center;
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: color(light);
+          
+          &:hover, &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .addresses {
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .address {
+      color: color(light, 0.5);
+      text-align: center;
+
+      a {
+        color: color(light, 0.5);
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .social-nav {
+    grid-area: socialNav;
+
+    .social-menu {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+
+      a {
+        color: color(primary);
+        text-decoration: none;
+        font-size: calc-rem(24px);
+        transition: color 300ms ease-in;
+
+        &:hover, &:focus {
+          color: color(secondary);
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(tablet) {
+  .footer {
+
+    :global(.logo) {
+      margin-inline: 0;
+    }
+
+    &-grid {
+      grid-template-columns: 1.5fr 1fr;
+      --flow-space: 2rem;
+      grid-template-areas:
+        'footerTop footerTop'
+        'address socialNav';
+    }
+
+    &-top {
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid color(light, 0.5);
+    }
+
+    &-nav {
+      border-top: none;
+      
+      ul {
+        flex-direction: row;
+
+      }
+    }
+
+    .addresses {
+      flex-direction: row;
+      gap: 1rem;
+
+      .address {
+        text-align: left;
+      }
+    }
+
+    .social-nav {
+      align-self: end;
+      
+  
+      .social-menu {
+        justify-content: end;
+        margin: 0;
+      }
+    }
+  }
+}

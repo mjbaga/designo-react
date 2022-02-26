@@ -1,4 +1,5 @@
 
+import Footer from 'components/common/Footer';
 import Header from 'components/common/Header';
 import styles from './Page.module.scss';
 
@@ -10,6 +11,7 @@ const Page = ({ classes, children }) => {
       <main className={`main ${classes ? classes : ''}`}>
         {children}
       </main>
+      <Footer />
     </div>
   )
 }
