@@ -1,0 +1,44 @@
+@use 'assets/styles' as *;
+
+.cta-box {
+  --flow-space: 2rem;
+  padding: 5rem 2rem;
+  color: color(light);
+
+  > :global(.section-heading) {
+    max-width: 15ch;
+    font-size: calc-rem(40px);
+  }
+
+  p {
+    max-width: 50ch;
+  }
+}
+
+@include respond-to(sm-desktop) {
+  .cta-box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      'title cta'
+      'text cta';
+    text-align: left;
+    padding: 5rem;
+
+    > :global(.section-heading) {
+      grid-area: title;
+      justify-self: start;
+    }
+  
+    p {
+      grid-area: text;
+      justify-self: start;
+    }
+
+    a {
+      grid-area: cta;
+      justify-self: end;
+      align-self: center;
+      margin-top: 0;
+    }
+  }
+}

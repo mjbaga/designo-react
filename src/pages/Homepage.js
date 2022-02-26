@@ -7,6 +7,7 @@ import styles from './Homepage.module.scss';
 import infoImage1 from 'assets/images/home/desktop/illustration-passionate.svg';
 import infoImage2 from 'assets/images/home/desktop/illustration-resourceful.svg';
 import infoImage3 from 'assets/images/home/desktop/illustration-friendly.svg';
+import CallToActionBox from 'components/common/CallToActionBox';
 
 const Homepage = () => {
 
@@ -80,6 +81,16 @@ const Homepage = () => {
                 image: infoImage3
               },
             ]}
+          />
+        </div>
+      </section>
+      <section className="cta-box-bottom">
+        <div className="container">
+          <CallToActionBox
+            title="Let’s talk about your project" 
+            text="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." 
+            link="/contact"
+            linkText="Get in touch"
           />
         </div>
       </section>

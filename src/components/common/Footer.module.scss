@@ -2,7 +2,7 @@
 
 .footer {
   background: color(dark);
-  padding-block: 8rem 4rem;
+  padding-block: clamp(12rem, 5vw, 14rem) 4rem;
   
   &-grid {
     display: grid;
@@ -96,8 +96,15 @@
   }
 }
 
+@include respond-to(mobile) {
+  .footer {
+    padding-block: 10rem 4rem;
+  }
+}
+
 @include respond-to(tablet) {
   .footer {
+    padding-block: 10rem 4rem;
 
     :global(.logo) {
       margin-inline: 0;
@@ -144,5 +151,11 @@
         margin: 0;
       }
     }
+  }
+}
+
+@include respond-to(sm-desktop) {
+  .footer {
+    padding-block: 8rem 4rem;
   }
 }

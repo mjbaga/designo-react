@@ -94,7 +94,6 @@ h3 {
   font-size: calc-rem(32px);
   line-height: calc-rem(32px);
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 @include respond-to(tablet) {
@@ -116,7 +115,6 @@ h3 {
     font-size: calc-rem(48px);
     line-height: calc-rem(48px);
     font-weight: 500;
-    text-transform: uppercase;
   }
 }
 
@@ -272,7 +270,17 @@ select {
 .bg-pattern-cta {
   background-image: url("/assets/images/shared/desktop/bg-pattern-call-to-action.svg");
   background-position: center right;
-  background-size: 80% auto;
+  background-size: 100% auto;
+
+  @include respond-to-max(mobile) {
+    background-position: center center;
+    background-size: 1200px auto;
+  }
+
+  @include respond-to(mobile) {
+    background-position: center center;
+    background-size: 1200px auto;
+  }
 }
 
 .bg-pattern-big-circle {
@@ -292,4 +300,12 @@ select {
 .logo {
   margin: 2rem 1rem;
   max-width: 200px;
+}
+
+.cta-box-bottom {
+  margin-bottom: clamp(-45%, 5vw, -30%);
+
+  @include respond-to(mobile) {
+    margin-bottom: -100px;
+  }
 }
