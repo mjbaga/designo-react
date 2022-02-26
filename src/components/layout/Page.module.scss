@@ -1,8 +1,11 @@
 @use 'assets/styles' as *;
 
 .page {
-  padding: 0 0 8rem;
   --flow-space: 4rem;
+
+  main {
+    padding: 0 0 8rem;
+  }
 }
 
 @include respond-to(sm-desktop) {
