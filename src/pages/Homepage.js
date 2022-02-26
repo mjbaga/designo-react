@@ -1,7 +1,12 @@
 import HeroBox from 'components/common/HeroBox';
 import ImageLinkGroup from 'components/common/ImageLinkGroup';
+import InfoCardGroup from 'components/common/InfoCardGroup';
 import Page from 'components/layout/Page';
 import styles from './Homepage.module.scss';
+
+import infoImage1 from 'assets/images/home/desktop/illustration-passionate.svg';
+import infoImage2 from 'assets/images/home/desktop/illustration-resourceful.svg';
+import infoImage3 from 'assets/images/home/desktop/illustration-friendly.svg';
 
 const Homepage = () => {
 
@@ -55,7 +60,29 @@ const Homepage = () => {
           />
         </div>
       </section>
-      
+      <section>
+        <div className="container">
+          <InfoCardGroup
+            items={[
+              {
+                title: 'Passionate',
+                desc: 'Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.',
+                image: infoImage1
+              },
+              {
+                title: 'Resourceful',
+                desc: 'Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.',
+                image: infoImage2
+              },
+              {
+                title: 'Friendly',
+                desc: 'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.',
+                image: infoImage3
+              },
+            ]}
+          />
+        </div>
+      </section>
     </Page>
 
     

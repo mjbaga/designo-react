@@ -1,0 +1,13 @@
+@use 'assets/styles' as *;
+
+.info-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+@include respond-to(sm-desktop) {
+  .info-card-group {
+    flex-direction: row;
+  }
+}
