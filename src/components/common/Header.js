@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className={`${styles['header']} flex`}>
-      <Link to="/" className={styles['logo']}>
+      <Link to="/" className="logo">
         <span className="sr-only">Link to home</span>
         <img src={require('assets/images/shared/desktop/logo-dark.png')} alt="Designo Logo" />
       </Link>
