@@ -26,6 +26,7 @@
     color: color(light);
     text-transform: uppercase;
     z-index: 10;
+    cursor: pointer;
   }
 
   &:after {
@@ -52,6 +53,7 @@
 
 .link-title {
   font-size: calc-rem(28px);
+  line-height: calc-rem(40px);
   margin-bottom: 1rem;
 }
 
