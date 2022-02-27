@@ -13,5 +13,16 @@
       grid-column: 1 / 2;
       grid-row: 1 / span 2;
     }
+
+    &.two {
+      height: 300px;
+
+      *:first-child {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+
+    
   }
 }

@@ -63,7 +63,6 @@ const AppDesign = () => {
                 images: {
                   mobile: require("assets/images/home/mobile/image-web-design.jpg"),
                   tablet: require("assets/images/home/tablet/image-web-design.jpg"),
-                  desktop: require("assets/images/home/desktop/image-web-design-large.jpg")
                 },
                 title: "Web Design",
                 link: "/web-design"
@@ -72,7 +71,6 @@ const AppDesign = () => {
                 images: {
                   mobile: require("assets/images/home/mobile/image-graphic-design.jpg"),
                   tablet: require("assets/images/home/tablet/image-graphic-design.jpg"),
-                  desktop: require("assets/images/home/desktop/image-graphic-design.jpg")
                 },
                 title: "Graphic Design",
                 link: "/graphic-design"
