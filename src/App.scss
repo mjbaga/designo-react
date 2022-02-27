@@ -299,6 +299,38 @@ select {
   }
 }
 
+.bg-pattern-intro-app {
+  background-image: url("/assets/images/app-design/desktop/bg-pattern-intro-app.svg");
+  background-position: center left;
+  background-size: 100% auto;
+
+  @include respond-to-max(mobile) {
+    background-position: center center;
+    background-size: 1000px auto;
+  }
+
+  @include respond-to(mobile) {
+    background-position: center left;
+    background-size: 1000px auto;
+  }
+}
+
+.bg-pattern-intro-graphic {
+  background-image: url("/assets/images/graphic-design/desktop/bg-pattern-intro-graphic.svg");
+  background-position: center left;
+  background-size: 100% auto;
+
+  @include respond-to-max(mobile) {
+    background-position: center center;
+    background-size: 1000px auto;
+  }
+
+  @include respond-to(mobile) {
+    background-position: center left;
+    background-size: 1000px auto;
+  }
+}
+
 .bg-pattern-big-circle {
   background-image: url("/assets/images/home/desktop/bg-pattern-hero-home.svg");
   background-position: center left;
