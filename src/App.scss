@@ -283,6 +283,22 @@ select {
   }
 }
 
+.bg-pattern-intro-web {
+  background-image: url("/assets/images/web-design/desktop/bg-pattern-intro-web.svg");
+  background-position: center right;
+  background-size: 100% auto;
+
+  @include respond-to-max(mobile) {
+    background-position: center center;
+    background-size: 1000px auto;
+  }
+
+  @include respond-to(mobile) {
+    background-position: center right;
+    background-size: 1000px auto;
+  }
+}
+
 .bg-pattern-big-circle {
   background-image: url("/assets/images/home/desktop/bg-pattern-hero-home.svg");
   background-position: center left;

@@ -1,0 +1,18 @@
+@use 'assets/styles' as *;
+
+.heading-box {
+  --flow-space: 1rem;
+  padding: 3rem;
+  border-radius: 0;
+
+  .desc > * {
+    color: color(light);
+    max-width: 50ch;
+  }
+}
+
+@include respond-to(mobile) {
+  .heading-box {
+    border-radius: 10px;
+  }
+}

@@ -1,3 +1,13 @@
+@use 'assets/styles' as *;
+
 .web-design {
-  padding: 0;
+  --flow-space: 6rem;
+
+
+}
+
+@include respond-to(sm-desktop) {
+  .web-design {
+
+  }
 }

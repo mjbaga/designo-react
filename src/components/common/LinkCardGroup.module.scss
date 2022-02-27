@@ -1,0 +1,13 @@
+@use 'assets/styles' as *;
+
+.link-card-group {
+  display: grid;
+  gap: 1.5rem;
+
+}
+
+@include respond-to(sm-desktop) {
+  .link-card-group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

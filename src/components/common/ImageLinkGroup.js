@@ -5,7 +5,9 @@ const ImageLinkGroup = ({items}) => {
 
   return (
     <div className={styles["image-link-group"]}>
-      {items.map((item, i) => (<ImageLink key={i} link={item.link} title={item.title} images={item.images} />))}
+      {items.map((item, i) => {
+        return <ImageLink key={i} link={item.link} title={item.title} images={item.images} />
+      })}
     </div>
   )
 }
