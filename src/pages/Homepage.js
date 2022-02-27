@@ -11,7 +11,7 @@ import CallToActionBox from 'components/common/CallToActionBox';
 const Homepage = () => {
 
   return (
-    <Page classes="homepage flow">
+    <Page classes="homepage flow" leaf2="true">
       
       <section>
         <div className="container mobile-no-pad">

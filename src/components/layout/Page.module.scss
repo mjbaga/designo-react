@@ -11,5 +11,21 @@
 @include respond-to(sm-desktop) {
   .page {
     --flow-space: 6rem;
+    position: relative;
+
+    &::before {
+      content: url('/assets/images/shared/desktop/bg-pattern-leaf.svg');
+      position: absolute;
+      top: 10%;
+      z-index: -1;
+    }
+
+    &.leaf-2::after {
+      content: url('/assets/images/shared/desktop/bg-pattern-leaf.svg');
+      position: absolute;
+      bottom: 18%;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
