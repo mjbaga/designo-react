@@ -7,6 +7,10 @@
   padding-inline: 20px;
   max-width: 1024px;
 
+  @include respond-to(sm-desktop) {
+    margin-bottom: 2rem;
+  }
+
   @include respond-to(lg-desktop) {
     max-width: 1360px;
   }
