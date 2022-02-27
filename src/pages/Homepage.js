@@ -2,7 +2,6 @@ import HeroBox from 'components/common/HeroBox';
 import ImageLinkGroup from 'components/common/ImageLinkGroup';
 import InfoCardGroup from 'components/common/InfoCardGroup';
 import Page from 'components/layout/Page';
-import styles from './Homepage.module.scss';
 
 import infoImage1 from 'assets/images/home/desktop/illustration-passionate.svg';
 import infoImage2 from 'assets/images/home/desktop/illustration-resourceful.svg';
@@ -12,7 +11,7 @@ import CallToActionBox from 'components/common/CallToActionBox';
 const Homepage = () => {
 
   return (
-    <Page classes={`${styles.homepage} flow`}>
+    <Page classes="homepage flow">
       
       <section>
         <div className="container mobile-no-pad">

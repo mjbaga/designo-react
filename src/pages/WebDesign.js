@@ -1,5 +1,4 @@
 import Page from 'components/layout/Page';
-import styles from './WebDesign.module.scss';
 import ImageLinkGroup from 'components/common/ImageLinkGroup';
 import CallToActionBox from 'components/common/CallToActionBox';
 import HeadingBox from 'components/common/HeadingBox';
@@ -8,10 +7,11 @@ import LinkCardGroup from 'components/common/LinkCardGroup';
 const WebDesign = () => {
 
   return (
-    <Page classes={`${styles["web-design"]} flow`}>
+    <Page classes="web-design flow">
       <section>
         <div className="container mobile-no-pad">
           <HeadingBox
+            type="bg-pattern-intro-web"
             title="Web Design"
             text="<p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>"
           />
