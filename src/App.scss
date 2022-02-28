@@ -358,3 +358,9 @@ select {
     margin-bottom: -100px;
   }
 }
+
+@include respond-to-max(mobile) {
+  .about .mobile-no-pad {
+    --flow-space: 0;
+  }
+}
