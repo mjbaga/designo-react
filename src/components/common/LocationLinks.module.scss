@@ -1,0 +1,49 @@
+@use 'assets/styles' as *;
+
+.location-links {
+  display: grid;
+  gap: 4rem;
+
+  .loclink {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .image-container {
+      position: relative;
+      max-width: 200px;
+      justify-self: center;
+      margin-inline: auto;
+
+      img {
+        width: 100%;
+      }
+
+      &:after {
+        content: url('/assets/images/shared/desktop/bg-pattern-small-circle.svg');
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    a {
+      align-self: center;
+    }
+  }
+  
+}
+
+@include respond-to(sm-desktop) {
+  .location-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

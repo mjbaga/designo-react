@@ -1,7 +1,11 @@
 import Page from 'components/layout/Page';
 import CallToActionBox from 'components/common/CallToActionBox';
 import ImageTextPair from 'components/common/ImageTextPair';
-// import LocationLinks from 'components/common/LocationLinks';
+import LocationLinks from 'components/common/LocationLinks';
+
+import CanadaIllustration from 'assets/images/shared/desktop/illustration-canada.svg';
+import AustraliaIllustration from 'assets/images/shared/desktop/illustration-australia.svg';
+import UnitedKingdomIllustration from 'assets/images/shared/desktop/illustration-united-kingdom.svg';
 
 const About = () => {
 
@@ -41,25 +45,25 @@ const About = () => {
       </section>
       <section>
         <div className="container">
-          {/* <LocationLinks
+          <LocationLinks
             items={[
               {
                 link: '/location',
-                image: require("assets/images/shared/desktop/illustration-canada.svg"),
+                image: CanadaIllustration,
                 location: 'Canada'
               },
               {
                 link: '/location',
-                image: require("assets/images/shared/desktop/illustration-australia.svg"),
+                image: AustraliaIllustration,
                 location: 'Australia'
               },
               {
                 link: '/location',
-                image: require("assets/images/shared/desktop/illustration-united-kingdom.svg"),
+                image: UnitedKingdomIllustration,
                 location: 'United Kingdom'
               },
             ]}
-          /> */}
+          />
         </div>
       </section>
       <section>
