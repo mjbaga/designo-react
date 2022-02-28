@@ -7,6 +7,7 @@ import infoImage1 from 'assets/images/home/desktop/illustration-passionate.svg';
 import infoImage2 from 'assets/images/home/desktop/illustration-resourceful.svg';
 import infoImage3 from 'assets/images/home/desktop/illustration-friendly.svg';
 import CallToActionBox from 'components/common/CallToActionBox';
+import Button from 'components/common/Button';
 
 const Homepage = () => {
 
@@ -16,13 +17,15 @@ const Homepage = () => {
       <section>
         <div className="container mobile-no-pad">
           <HeroBox 
-            heading="true"
-            title="Award-winning custom designs and digital branding solutions" 
-            text="<p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>"
+            imageAlt="Hero Image"
             image={require("assets/images/home/desktop/image-hero-phone.png")}
-            link="/web-design"
-            btnText="Learn more"
-          />
+          >
+            <h1>Award-winning custom designs and digital branding solutions</h1>
+            <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
+            <Button link="/web-design" classes="btn-light">
+              Learn more
+            </Button>
+          </HeroBox>
         </div>
       </section>
       <section>

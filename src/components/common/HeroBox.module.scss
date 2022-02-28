@@ -6,34 +6,29 @@
   overflow-y: hidden;
   padding: 4rem 1rem;
   border-radius: 0;
-  grid-template-areas: 
-    'heading'
-    'desc'
-    'button'
-    'image';
   align-items: start;
 
-  h1, .section-heading {
-    grid-area: heading;
-    max-width: 25ch;
-  }
+  .content {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2rem;
 
-  .desc {
-    grid-area: desc;
-    max-width: 60ch;
-    
-    & * {
+    > *:not(a) {
+      max-width: 60ch;
       color: color(light);
+    }
+
+    > h1, > :global(.section-heading) {
+      max-width: 20ch;
+    }
+
+    a {
+      z-index: 1000;
+      align-self: center;
     }
   }
 
-  a {
-    grid-area: button;
-    z-index: 1000;
-  }
-
   .image-container {
-    grid-area: image;
     margin-top: 2rem;
     z-index: 100;
     position: relative;
@@ -62,7 +57,7 @@
 
 @include respond-to(tablet) {
   .hero-box {
-    max-height: 90vh;
+    max-height: 100vh;
     padding: 4rem 3rem;
   }
 }
@@ -76,10 +71,6 @@
     align-items: center;
     column-gap: 5rem;
     grid-template-columns: 1.6fr 1fr;
-    grid-template-areas: 
-      'heading image'
-      'desc image'
-      'button image';
 
       .image-container {
         width: 300px;
