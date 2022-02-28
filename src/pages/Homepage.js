@@ -17,7 +17,7 @@ const Homepage = () => {
       <section>
         <div className="container mobile-no-pad">
           <HeroBox 
-            imageAlt="Hero Image"
+            alt="Hero Image"
             image={require("assets/images/home/desktop/image-hero-phone.png")}
           >
             <h1>Award-winning custom designs and digital branding solutions</h1>
