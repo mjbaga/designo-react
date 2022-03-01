@@ -247,6 +247,10 @@ select {
   font-weight: bold;
 }
 
+.spacer {
+  margin-block: var(--gap, 2rem);
+}
+
 /* Background Colors */
 .bg-primary { background: color(primary); }
 .bg-dark { background: color(dark); }

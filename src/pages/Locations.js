@@ -19,6 +19,7 @@ const Locations = () => {
     <Page classes="about flow no-background">
       <section>
         <div className="container mobile-no-pad flow">
+          <h1 className="center spacer">Our Locations</h1>
           <LocationMap 
             location="Canada" 
             mapMarker={{
