@@ -17,7 +17,7 @@ const LocationMap = ({ location, address, contact, mapMarker, order="text" }) =>
           <Popup><p className="bold">{address.name}</p></Popup>
         </Marker>
       </MapContainer>
-      <div className={`${styles.info} flow`}>
+      <div className={styles.info}>
         <h2 className="section-heading">{location}</h2>
         <div className={styles.address}>
           <p className="bold">{address.name}</p>
