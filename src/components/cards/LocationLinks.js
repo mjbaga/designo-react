@@ -1,5 +1,5 @@
 
-import Button from "./Button";
+import Button from "../common/Button";
 
 import styles from './LocationLinks.module.scss';
 

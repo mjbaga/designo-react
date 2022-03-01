@@ -1,5 +1,5 @@
 import Page from "components/layout/Page";
-import CallToActionBox from 'components/common/CallToActionBox';
+import CallToActionBox from 'components/boxes/CallToActionBox';
 import LocationMap from "components/common/LocationMap";
 import '@react-google-maps/api';
 import 'leaflet/dist/leaflet.css';

@@ -1,7 +1,7 @@
 import Page from 'components/layout/Page';
-import CallToActionBox from 'components/common/CallToActionBox';
+import CallToActionBox from 'components/boxes/CallToActionBox';
 import ImageTextPair from 'components/common/ImageTextPair';
-import LocationLinks from 'components/common/LocationLinks';
+import LocationLinks from 'components/cards/LocationLinks';
 
 import CanadaIllustration from 'assets/images/shared/desktop/illustration-canada.svg';
 import AustraliaIllustration from 'assets/images/shared/desktop/illustration-australia.svg';

@@ -1,8 +1,8 @@
 import Page from 'components/layout/Page';
-import ImageLinkGroup from 'components/common/ImageLinkGroup';
-import CallToActionBox from 'components/common/CallToActionBox';
-import HeadingBox from 'components/common/HeadingBox';
-import LinkCardGroup from 'components/common/LinkCardGroup';
+import ImageLinkGroup from 'components/cards/ImageLinkGroup';
+import CallToActionBox from 'components/boxes/CallToActionBox';
+import HeadingBox from 'components/boxes/HeadingBox';
+import LinkCardGroup from 'components/cards/LinkCardGroup';
 
 const GraphicDesign = () => {
 

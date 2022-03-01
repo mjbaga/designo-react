@@ -1,12 +1,12 @@
-import HeroBox from 'components/common/HeroBox';
-import ImageLinkGroup from 'components/common/ImageLinkGroup';
-import InfoCardGroup from 'components/common/InfoCardGroup';
+import HeroBox from 'components/boxes/HeroBox';
+import ImageLinkGroup from 'components/cards/ImageLinkGroup';
+import InfoCardGroup from 'components/cards/InfoCardGroup';
 import Page from 'components/layout/Page';
 
 import infoImage1 from 'assets/images/home/desktop/illustration-passionate.svg';
 import infoImage2 from 'assets/images/home/desktop/illustration-resourceful.svg';
 import infoImage3 from 'assets/images/home/desktop/illustration-friendly.svg';
-import CallToActionBox from 'components/common/CallToActionBox';
+import CallToActionBox from 'components/boxes/CallToActionBox';
 import Button from 'components/common/Button';
 
 const Homepage = () => {
