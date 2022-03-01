@@ -12,7 +12,7 @@ import Button from 'components/common/Button';
 const Homepage = () => {
 
   return (
-    <Page classes="homepage flow" leaf2="true">
+    <Page classes="homepage flow" leafClass="leaf-top leaf-bottom leaf-bottom-flipped">
       
       <section>
         <div className="container mobile-no-pad">

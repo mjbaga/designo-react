@@ -10,7 +10,7 @@ import UnitedKingdomIllustration from 'assets/images/shared/desktop/illustration
 const About = () => {
 
   return (
-    <Page classes="about flow" leaf2="true">
+    <Page classes="about flow" leafClass="leaf-top leaf-mid">
       <section>
         <div className="container mobile-no-pad flow">
           <ImageTextPair

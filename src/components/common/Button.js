@@ -1,17 +1,10 @@
 import { Link } from 'react-router-dom';
 import ConditionalWrapper from 'utils/ConditionalWrapper';
 import styles from './Button.module.scss';
+import { splitClasses } from 'utils/CustomFunctions';
 
 const Button = ({ link, classes, children }) => {
-  const splitClass = classes ? classes.split(' ') : '';
-  let classString = [];
-
-  if(splitClass.length) {
-    splitClass.forEach((className) => {
-      return classString.push(styles[className]);
-    });
-  }
-  
+  const splitClass = splitClasses(classes, styles);
 
   return (
     <ConditionalWrapper
@@ -19,7 +12,7 @@ const Button = ({ link, classes, children }) => {
       wrapperTrue={children => 
         <Link 
           to={link} 
-          className={`${styles['btn']} ${splitClass.length ? classString.join(' ') : ''}`}
+          className={`${styles['btn']} ${splitClass.length ? splitClass.join(' ') : ''}`}
         >
           {children}
         </Link>}
