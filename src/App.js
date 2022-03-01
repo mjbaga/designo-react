@@ -5,6 +5,7 @@ import AppDesign from 'pages/AppDesign';
 import GraphicDesign from 'pages/GraphicDesign';
 import About from 'pages/About';
 import Locations from 'pages/Locations';
+import Contact from 'pages/Contact';
 import DesignSystem from 'pages/DesignSystem';
 
 import './App.scss';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/graphic-design" element={<GraphicDesign />} />
         <Route path="/about" element={<About />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/design-system" element={<DesignSystem />} />
       </Routes>
     </div>

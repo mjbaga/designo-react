@@ -3,12 +3,12 @@ import ConditionalWrapper from 'utils/ConditionalWrapper';
 import styles from './Button.module.scss';
 import { splitClasses } from 'utils/CustomFunctions';
 
-const Button = ({ link, classes, children }) => {
+const Button = ({ link, classes, children, type='anchor', disabled=false }) => {
   const splitClass = splitClasses(classes, styles);
 
   return (
     <ConditionalWrapper
-      condition={link !== '' || link !== undefined}
+      condition={type === 'anchor'}
       wrapperTrue={children => 
         <Link 
           to={link} 
@@ -17,7 +17,7 @@ const Button = ({ link, classes, children }) => {
           {children}
         </Link>}
       wrapperFalse={children => 
-        <button className={classes}>{children}</button>}
+        <button className={`${styles['btn']} ${splitClass.length ? splitClass.join(' ') : ''}`} disabled={disabled}>{children}</button>}
     >
       {children}
     </ConditionalWrapper>

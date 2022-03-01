@@ -10,6 +10,8 @@
   text-decoration: none;
   font-weight: 500;
   transition: all 250ms ease-in;
+  border: none;
+  cursor: pointer;
 
   &:hover, &:focus, &.active {
     background: color(primary, 0.5);
@@ -26,6 +28,12 @@
     &:hover, &:focus, &.active {
       background: color(light, 0.5);
       color: color(light);
+    }
+
+    &:disabled {
+      background: color(light, 0.5);
+      color: color(light, 0.8);
+      cursor: auto;
     }
   }
 }

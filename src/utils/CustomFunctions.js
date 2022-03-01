@@ -9,8 +9,6 @@ const splitClasses = (classes, styleNamespace) => {
     });
   }
 
-  console.log(classString);
-
   return classString;
 }
 
