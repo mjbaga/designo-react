@@ -13,6 +13,12 @@
     --flow-space: 6rem;
     position: relative;
 
+    &.no-background {
+      &::before {
+        content: none;
+      }
+    }
+
     &::before {
       content: url('/assets/images/shared/desktop/bg-pattern-leaf.svg');
       position: absolute;

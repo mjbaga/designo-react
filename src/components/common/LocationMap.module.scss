@@ -1,0 +1,114 @@
+@use 'assets/styles' as *;
+
+.location-map {
+  --flow-space: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  .info {
+    order: 1;
+    background-color: color(cream);
+    background-image: url("/assets/images/shared/desktop/bg-pattern-three-circles.svg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+      'heading'
+      'address'
+      'contact';
+
+    :global(.section-heading) {
+      color: color(primary);
+      grid-area: heading;
+    }
+
+    .address {
+      grid-area: address;
+    }
+
+    .contact {
+      grid-area: contact;
+
+      a {
+      
+        text-decoration: none;
+        color: color(dark);
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  :global(.leaflet-container) {
+    width: 100%;
+    height: 50vh;
+    order: 0;
+  }
+}
+
+@include respond-to(tablet) {
+  .location-map {
+    gap: 1.5rem;
+
+    .info {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      'heading heading'
+      'address contact';
+      text-align: left;
+    }
+
+    :global(.leaflet-container) {
+      border-radius: 10px;
+    }
+  }
+}
+
+@include respond-to(sm-desktop) {
+  .location-map {
+    margin-top: 0;
+    flex-direction: row;
+    
+    &.image-first {
+      :global(.leaflet-container) { order: 0; }
+      .info { order: 1; }
+    }
+
+    .info {
+      order: 0;
+      width: 65%;
+    }
+
+    :global(.leaflet-container) {
+      order: 1;
+      width: 35%;
+      aspect-ratio: 1 / 1;
+      height: auto;
+    }
+  }
+}
+
+@include respond-to (lg-desktop) {
+  .location-map {
+    
+
+    .info {
+      width: 70%;
+      gap: 0;
+    }
+
+    :global(.leaflet-container) {
+      width: 30%;
+      
+    }
+  }
+}

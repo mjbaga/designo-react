@@ -14,7 +14,7 @@ const Header = () => {
       <MainNav 
         navItems={[ 
           {
-            link: '/our-company',
+            link: '/about',
             text: 'Our Company'
           },
           {
