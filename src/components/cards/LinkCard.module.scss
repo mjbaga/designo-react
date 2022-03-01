@@ -7,8 +7,10 @@
   border-radius: 10px;
   overflow: hidden;
   color: color(dark);
+  transition: all 300ms ease-in;
   
   &:hover, &:focus {
+    box-shadow: $boxshadow-darkgrey;
 
     .text {
       color: color(light);
