@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/designo-react/static/css/main.0abf579e.css",
+    "main.css": "/designo-react/static/css/main.dea5f141.css",
     "main.js": "/designo-react/static/js/main.147b341c.js",
     "static/media/image-hero-phone.png": "/designo-react/static/media/image-hero-phone.46064e4cf727f0593d59.png",
     "static/media/image-change.jpg": "/designo-react/static/media/image-change.3051c97c1dcc2c751755.jpg",
@@ -50,11 +50,11 @@
     "static/media/icon-error.svg": "/designo-react/static/media/icon-error.fd5e1ede84a613c61261af737d2bf0c7.svg",
     "static/media/icon-hamburger.svg": "/designo-react/static/media/icon-hamburger.a39ae0d1f45acff97a96.svg",
     "static/media/icon-right-arrow.svg": "/designo-react/static/media/icon-right-arrow.7046cd1b7a4a6072a896.svg",
-    "main.0abf579e.css.map": "/designo-react/static/css/main.0abf579e.css.map",
+    "main.dea5f141.css.map": "/designo-react/static/css/main.dea5f141.css.map",
     "main.147b341c.js.map": "/designo-react/static/js/main.147b341c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0abf579e.css",
+    "static/css/main.dea5f141.css",
     "static/js/main.147b341c.js"
   ]
 }
