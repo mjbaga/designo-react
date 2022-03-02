@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className={styles.address}>
               <p className="bold">Contact Us (Central Office)</p>
-              <p>P : <a href="tel:+1 253-863-8967">+1 253-863-8967</a></p>
+              <p>P : <a href="tel:+12538638967">+1 253-863-8967</a></p>
               <p>M : <a href="to:contact@designo.co">contact@designo.co</a></p>
             </div>
           </div>

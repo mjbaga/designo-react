@@ -20,9 +20,9 @@ const MainNav = (props) => {
       >
         <span className="sr-only">Menu</span>
       </button>
-      <nav className={`${styles['main-nav']} ${menuIsActive ? styles['active'] : '' }`}>
+      <nav id={id} className={`${styles['main-nav']} ${menuIsActive ? styles['active'] : '' }`}>
         <ul 
-          id={id} 
+          
           className="flex"
         >
           {navItems.map((item, i)=> (

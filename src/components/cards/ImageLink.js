@@ -14,10 +14,10 @@ const ImageLink = ({ link, title, images }) => {
         
         <img src={images.mobile} alt={title} /> 
       </picture>
-      <label className={styles.text}>
+      <div className={styles.text}>
         <p className={styles["link-title"]}>{title}</p>
         <p className={styles.subtext}>View Projects</p>
-      </label>
+      </div>
     </Link>
   )
 }

@@ -9,7 +9,7 @@ const InfoCardGroup = ({ items }) => {
           <div className={styles["image-container"]}>
             <img src={item.image} alt={item.title} />
           </div>
-          <h3>{item.title}</h3>
+          <p className={styles["info-title"]}>{item.title}</p>
           <p>{item.desc}</p>
         </div>
       ))}

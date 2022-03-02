@@ -10,9 +10,13 @@
     text-align: center;
     gap: 2rem;
   
-    h3 {
+    .info-title {
       text-transform: uppercase;
       margin-top: 10px;
+      font-weight: 500;
+      font-size: calc-rem(20px);
+      line-height: calc-rem(26px);
+      letter-spacing: 5px;
     }
   
     .image-container {
@@ -51,7 +55,7 @@
       justify-self: center;
     }
 
-    h3 {
+    .info-title {
       align-self: end;
     }
   }
