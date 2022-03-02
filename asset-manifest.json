@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/designo-react/static/css/main.00c4bd87.css",
-    "main.js": "/designo-react/static/js/main.feee5928.js",
+    "main.css": "/designo-react/static/css/main.ba89f902.css",
+    "main.js": "/designo-react/static/js/main.56272aa2.js",
     "static/css/421.781fff46.chunk.css": "/designo-react/static/css/421.781fff46.chunk.css",
     "static/js/421.07cb9d64.chunk.js": "/designo-react/static/js/421.07cb9d64.chunk.js",
     "static/css/265.781fff46.chunk.css": "/designo-react/static/css/265.781fff46.chunk.css",
@@ -66,8 +66,8 @@
     "static/media/icon-error.svg": "/designo-react/static/media/icon-error.fd5e1ede84a613c61261af737d2bf0c7.svg",
     "static/media/icon-hamburger.svg": "/designo-react/static/media/icon-hamburger.a39ae0d1f45acff97a96.svg",
     "static/media/icon-right-arrow.svg": "/designo-react/static/media/icon-right-arrow.7046cd1b7a4a6072a896.svg",
-    "main.00c4bd87.css.map": "/designo-react/static/css/main.00c4bd87.css.map",
-    "main.feee5928.js.map": "/designo-react/static/js/main.feee5928.js.map",
+    "main.ba89f902.css.map": "/designo-react/static/css/main.ba89f902.css.map",
+    "main.56272aa2.js.map": "/designo-react/static/js/main.56272aa2.js.map",
     "421.781fff46.chunk.css.map": "/designo-react/static/css/421.781fff46.chunk.css.map",
     "421.07cb9d64.chunk.js.map": "/designo-react/static/js/421.07cb9d64.chunk.js.map",
     "265.781fff46.chunk.css.map": "/designo-react/static/css/265.781fff46.chunk.css.map",
@@ -86,7 +86,7 @@
     "81.597b375c.chunk.js.map": "/designo-react/static/js/81.597b375c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c4bd87.css",
-    "static/js/main.feee5928.js"
+    "static/css/main.ba89f902.css",
+    "static/js/main.56272aa2.js"
   ]
 }
