@@ -10,19 +10,21 @@ const MainNav = (props) => {
     setMenuIsActive(!menuIsActive);
   }
 
+  menuIsActive ? document.body.classList.add('menu-open') : document.body.classList.remove('menu-open');
+
   return (
     <Fragment>
       <button 
         onClick={menuClickHandler} 
         className={styles["mobile-nav-toggle"]} 
-        aria-controls="primary-navigation" 
+        aria-controls={id}
         aria-expanded={menuIsActive ? 'true' : 'false'}
       >
         <span className="sr-only">Menu</span>
       </button>
-      <nav id={id} className={`${styles['main-nav']} ${menuIsActive ? styles['active'] : '' }`}>
+      <nav role="navigation" className={`${styles['main-nav']} ${menuIsActive ? styles['active'] : '' }`}>
         <ul 
-          
+          id={id} 
           className="flex"
         >
           {navItems.map((item, i)=> (
