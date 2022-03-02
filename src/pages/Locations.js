@@ -16,7 +16,7 @@ L.Icon.Default.mergeOptions({
 
 const Locations = () => {
   return (
-    <Page classes="about flow no-background">
+    <Page classes="about flow no-background" title="Designo Locations">
       <section>
         <div className="container mobile-no-pad flow">
           <h1 className="center spacer">Our Locations</h1>

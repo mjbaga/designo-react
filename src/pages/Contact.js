@@ -9,7 +9,7 @@ import ContactForm from 'components/forms/ContactForm';
 const Contact = () => {
 
   return (
-    <Page classes="about flow" leafClass="leaf-bottom">
+    <Page classes="about flow" leafClass="leaf-bottom" title="Contact - Designo">
       <section>
         <div className="container mobile-no-pad">
           <ContactForm>
@@ -23,17 +23,17 @@ const Contact = () => {
           <LocationLinks
             items={[
               {
-                link: '/location',
+                link: '/locations',
                 image: CanadaIllustration,
                 location: 'Canada'
               },
               {
-                link: '/location',
+                link: '/locations',
                 image: AustraliaIllustration,
                 location: 'Australia'
               },
               {
-                link: '/location',
+                link: '/locations',
                 image: UnitedKingdomIllustration,
                 location: 'United Kingdom'
               },

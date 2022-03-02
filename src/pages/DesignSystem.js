@@ -2,6 +2,7 @@ import Button from 'components/common/Button';
 import styles from './DesignSystem.module.scss';
 
 const DesignSystem = () => {
+  document.title = "Designo Design System";
 
   return (
     <div className={`${styles["design-system"]}`}>

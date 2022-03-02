@@ -10,7 +10,7 @@ import UnitedKingdomIllustration from 'assets/images/shared/desktop/illustration
 const About = () => {
 
   return (
-    <Page classes="about flow" leafClass="leaf-top leaf-mid">
+    <Page classes="about flow" leafClass="leaf-top leaf-mid" title="About - Designo">
       <section>
         <div className="container mobile-no-pad flow">
           <ImageTextPair
@@ -48,17 +48,17 @@ const About = () => {
           <LocationLinks
             items={[
               {
-                link: '/location',
+                link: '/locations',
                 image: CanadaIllustration,
                 location: 'Canada'
               },
               {
-                link: '/location',
+                link: '/locations',
                 image: AustraliaIllustration,
                 location: 'Australia'
               },
               {
-                link: '/location',
+                link: '/locations',
                 image: UnitedKingdomIllustration,
                 location: 'United Kingdom'
               },

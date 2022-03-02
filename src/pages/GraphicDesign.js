@@ -7,7 +7,7 @@ import LinkCardGroup from 'components/cards/LinkCardGroup';
 const GraphicDesign = () => {
 
   return (
-    <Page classes="app-design flow" leafClass="leaf-top">
+    <Page classes="app-design flow" leafClass="leaf-top" title="Graphic Design - Designo">
       <section>
         <div className="container mobile-no-pad">
           <HeadingBox

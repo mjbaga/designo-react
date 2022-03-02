@@ -75,7 +75,6 @@
 
 @include respond-to(sm-desktop) {
   .location-map {
-    margin-top: 0;
     flex-direction: row;
     
     &.image-first {
