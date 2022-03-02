@@ -1,7 +1,23 @@
 {
   "files": {
-    "main.css": "/designo-react/static/css/main.dea5f141.css",
-    "main.js": "/designo-react/static/js/main.147b341c.js",
+    "main.css": "/designo-react/static/css/main.13e2d02e.css",
+    "main.js": "/designo-react/static/js/main.feee5928.js",
+    "static/css/421.781fff46.chunk.css": "/designo-react/static/css/421.781fff46.chunk.css",
+    "static/js/421.07cb9d64.chunk.js": "/designo-react/static/js/421.07cb9d64.chunk.js",
+    "static/css/265.781fff46.chunk.css": "/designo-react/static/css/265.781fff46.chunk.css",
+    "static/js/265.317144c8.chunk.js": "/designo-react/static/js/265.317144c8.chunk.js",
+    "static/css/481.781fff46.chunk.css": "/designo-react/static/css/481.781fff46.chunk.css",
+    "static/js/481.d985e212.chunk.js": "/designo-react/static/js/481.d985e212.chunk.js",
+    "static/css/212.9b04b208.chunk.css": "/designo-react/static/css/212.9b04b208.chunk.css",
+    "static/js/212.41a7afad.chunk.js": "/designo-react/static/js/212.41a7afad.chunk.js",
+    "static/css/935.dba86d71.chunk.css": "/designo-react/static/css/935.dba86d71.chunk.css",
+    "static/js/935.ba729b00.chunk.js": "/designo-react/static/js/935.ba729b00.chunk.js",
+    "static/css/655.7756587f.chunk.css": "/designo-react/static/css/655.7756587f.chunk.css",
+    "static/js/655.6f505e34.chunk.js": "/designo-react/static/js/655.6f505e34.chunk.js",
+    "static/css/908.f16aa61d.chunk.css": "/designo-react/static/css/908.f16aa61d.chunk.css",
+    "static/js/908.c7317ddc.chunk.js": "/designo-react/static/js/908.c7317ddc.chunk.js",
+    "static/js/909.a8928f12.chunk.js": "/designo-react/static/js/909.a8928f12.chunk.js",
+    "static/js/81.597b375c.chunk.js": "/designo-react/static/js/81.597b375c.chunk.js",
     "static/media/image-hero-phone.png": "/designo-react/static/media/image-hero-phone.46064e4cf727f0593d59.png",
     "static/media/image-change.jpg": "/designo-react/static/media/image-change.3051c97c1dcc2c751755.jpg",
     "static/media/image-boxed-water.jpg": "/designo-react/static/media/image-boxed-water.9348f4ace8db6ac37e27.jpg",
@@ -50,11 +66,27 @@
     "static/media/icon-error.svg": "/designo-react/static/media/icon-error.fd5e1ede84a613c61261af737d2bf0c7.svg",
     "static/media/icon-hamburger.svg": "/designo-react/static/media/icon-hamburger.a39ae0d1f45acff97a96.svg",
     "static/media/icon-right-arrow.svg": "/designo-react/static/media/icon-right-arrow.7046cd1b7a4a6072a896.svg",
-    "main.dea5f141.css.map": "/designo-react/static/css/main.dea5f141.css.map",
-    "main.147b341c.js.map": "/designo-react/static/js/main.147b341c.js.map"
+    "main.13e2d02e.css.map": "/designo-react/static/css/main.13e2d02e.css.map",
+    "main.feee5928.js.map": "/designo-react/static/js/main.feee5928.js.map",
+    "421.781fff46.chunk.css.map": "/designo-react/static/css/421.781fff46.chunk.css.map",
+    "421.07cb9d64.chunk.js.map": "/designo-react/static/js/421.07cb9d64.chunk.js.map",
+    "265.781fff46.chunk.css.map": "/designo-react/static/css/265.781fff46.chunk.css.map",
+    "265.317144c8.chunk.js.map": "/designo-react/static/js/265.317144c8.chunk.js.map",
+    "481.781fff46.chunk.css.map": "/designo-react/static/css/481.781fff46.chunk.css.map",
+    "481.d985e212.chunk.js.map": "/designo-react/static/js/481.d985e212.chunk.js.map",
+    "212.9b04b208.chunk.css.map": "/designo-react/static/css/212.9b04b208.chunk.css.map",
+    "212.41a7afad.chunk.js.map": "/designo-react/static/js/212.41a7afad.chunk.js.map",
+    "935.dba86d71.chunk.css.map": "/designo-react/static/css/935.dba86d71.chunk.css.map",
+    "935.ba729b00.chunk.js.map": "/designo-react/static/js/935.ba729b00.chunk.js.map",
+    "655.7756587f.chunk.css.map": "/designo-react/static/css/655.7756587f.chunk.css.map",
+    "655.6f505e34.chunk.js.map": "/designo-react/static/js/655.6f505e34.chunk.js.map",
+    "908.f16aa61d.chunk.css.map": "/designo-react/static/css/908.f16aa61d.chunk.css.map",
+    "908.c7317ddc.chunk.js.map": "/designo-react/static/js/908.c7317ddc.chunk.js.map",
+    "909.a8928f12.chunk.js.map": "/designo-react/static/js/909.a8928f12.chunk.js.map",
+    "81.597b375c.chunk.js.map": "/designo-react/static/js/81.597b375c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dea5f141.css",
-    "static/js/main.147b341c.js"
+    "static/css/main.13e2d02e.css",
+    "static/js/main.feee5928.js"
   ]
 }
