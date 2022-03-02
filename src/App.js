@@ -61,7 +61,8 @@ function App() {
 
   return (
     <div className="App">
-      <Suspense fallback={<div className='centered'><LoadingSpinner /></div>}>
+      {/* <LoadingSpinner /> */}
+      <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/web-design" element={<WebDesign />} />

@@ -1,7 +1,7 @@
 @use 'assets/styles' as *;
 
 .spinner-container {
-  display: fixed;
+  display: fixed !important;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -10,6 +10,7 @@
   bottom: 0;
   background-color: color(dark, 0.25);
   position: relative;
+  z-index: 10000;
 }
 
 .spinner {
@@ -17,7 +18,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-block;
   width: 80px;
   height: 80px;
 
