@@ -388,6 +388,8 @@ select {
   }
 }
 
-.App {
-  min-width: 100vw;
+@include respond-to-max(mobile) {
+  .App {
+    min-width: 100vw;
+  }
 }
