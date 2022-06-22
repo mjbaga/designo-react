@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/designo-react/static/css/main.b9432df0.css",
-    "main.js": "/designo-react/static/js/main.429673fa.js",
+    "main.js": "/designo-react/static/js/main.a288e812.js",
     "static/css/421.781fff46.chunk.css": "/designo-react/static/css/421.781fff46.chunk.css",
     "static/js/421.07cb9d64.chunk.js": "/designo-react/static/js/421.07cb9d64.chunk.js",
     "static/css/265.781fff46.chunk.css": "/designo-react/static/css/265.781fff46.chunk.css",
@@ -51,9 +51,9 @@
     "static/media/icomoon.ttf?n8budr": "/designo-react/static/media/icomoon.dfa221f233e40cc45ca1.ttf",
     "static/media/bg-pattern-hero-contact-mobile.svg": "/designo-react/static/media/bg-pattern-hero-contact-mobile.a98cec755acc26d7e056.svg",
     "static/media/bg-pattern-hero-about-mobile.svg": "/designo-react/static/media/bg-pattern-hero-about-mobile.f7460aaecfd4ae678418.svg",
+    "index.html": "/designo-react/index.html",
     "static/media/bg-pattern-call-to-action.svg": "/designo-react/static/media/bg-pattern-call-to-action.92fe2a1bed633d621811.svg",
     "static/media/bg-pattern-intro-web.svg": "/designo-react/static/media/bg-pattern-intro-web.0b6766bb25d65c46a95d.svg",
-    "index.html": "/designo-react/index.html",
     "static/media/bg-pattern-intro-app.svg": "/designo-react/static/media/bg-pattern-intro-app.3a01f8dc486a665979a7.svg",
     "static/media/bg-pattern-intro-graphic.svg": "/designo-react/static/media/bg-pattern-intro-graphic.0484a60b561f36b9f55d.svg",
     "static/media/bg-pattern-three-circles.svg": "/designo-react/static/media/bg-pattern-three-circles.53a3ac819191bdc4d51c.svg",
@@ -67,7 +67,7 @@
     "static/media/icon-hamburger.svg": "/designo-react/static/media/icon-hamburger.a39ae0d1f45acff97a96.svg",
     "static/media/icon-right-arrow.svg": "/designo-react/static/media/icon-right-arrow.7046cd1b7a4a6072a896.svg",
     "main.b9432df0.css.map": "/designo-react/static/css/main.b9432df0.css.map",
-    "main.429673fa.js.map": "/designo-react/static/js/main.429673fa.js.map",
+    "main.a288e812.js.map": "/designo-react/static/js/main.a288e812.js.map",
     "421.781fff46.chunk.css.map": "/designo-react/static/css/421.781fff46.chunk.css.map",
     "421.07cb9d64.chunk.js.map": "/designo-react/static/js/421.07cb9d64.chunk.js.map",
     "265.781fff46.chunk.css.map": "/designo-react/static/css/265.781fff46.chunk.css.map",
@@ -87,6 +87,6 @@
   },
   "entrypoints": [
     "static/css/main.b9432df0.css",
-    "static/js/main.429673fa.js"
+    "static/js/main.a288e812.js"
   ]
 }
