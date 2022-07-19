@@ -30,6 +30,11 @@ const Homepage = () => {
       </section>
       <section>
         <div className="container">
+          <truflation-widget></truflation-widget>
+        </div>
+      </section>
+      <section>
+        <div className="container">
           <ImageLinkGroup
             items={[
               {
